@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	//string2.jsp data:{name:'',age:},
+	$.ajax('string2.jsp',{
+		data:{name:'s',age:21},
+		success:function(data){
+		//body태그 data값 추가
+			$('body').append(data);
+		}
+	})
+});
+</script>
+</head>
+<body>
+<h1></h1>
+
+</body>
+</html>
